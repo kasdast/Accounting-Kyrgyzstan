@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header {
+    font-family:AppleGothic;
+    font-weight: bold;
+    font-size: larger;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    color: black;
+    /* background-color: beige; */
+    line-height: 130px;
+    margin-bottom: 10px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#main {
+    color: black;
+    text-align: left;
+    width: 30%;
+    height: 300px;
+    
+    float: left;
+    margin-left: 10px;
+    padding: 30px;
+    padding-left: 150px;
+    
+
+}
+
+#aside {
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    font-weight: bold;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background-color: #a5a4a4;
+    border-radius: 30px;
+    /* background-image: url("https://krots.top/uploads/posts/2022-03/1646204067_1-krot-info-p-smeshnoi-programmist-smeshnie-foto-1.jpg"); */
+    line-height: 300px;
+    float: right;
+    margin-right: 300px;
+
+} 
+#aside img {
+    width: 100%;
+    height: auto;
+}
+
+#menu {
+    display: flex;
+    gap: 20px; 
+    padding-right: 100px;
+}
+
+.links {
+    text-decoration: none;
+    color: #333; 
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    color: rgb(247, 247, 247);
+    float: left;
+    background-color: gray;
+    margin-bottom: 1px; /* Отталкиваем футер вниз, чтобы он был прижат к нижней границе контейнера */
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    text-decoration: underline;
+    
+}
+
+a h1 {
+    text-align: left;
+    padding-left: 100px;
+    line-height: 70px;
+}
+
+p {
+ 
+    text-align: left;
+    font-size: 20px;
+    margin-left: 60px;
+}
+.pre_text {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
