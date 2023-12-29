@@ -5,28 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>БУХГАЛТЕРСКИЕ УСЛУГИ | БИШКЕК | Accounting Kyrgyzstan</title>
     <link rel = "stylesheet" type = "text/css" href = "/assets/css/index.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 
-    <!---------------------------- Introduction Section ------------------------------->
-    
-    <header>
-        <img id = "logo" src="/assets/img/logo.jpeg" alt ="logo"> 
-        <a href = "/html-folder/index.html"><h1>Accounting Kyrgyzstan</h1></a> 
-        
-        <nav>
-            <ul>
-                <a class = "nav_link" href = "/html-folder/about.html"><li>О нас </li></a>
-                <a class = "nav_link" href = "/html-folder/services.html"><li>Услуги</li></a>
-                <a class = "nav_link" href = "/html-folder/contact.html"><li>Контакты</li></a>
-            </ul>
-        </nav>
-    </header>
-    
-    <!-- <img id = "banner" src = "/assets/img/img1.jpeg" alt = "Picture"> Thinking about getting rid of -->  
-    
-    <!------------------------------------------------------------------------------>
 
+    <div class="top-bar">
+        <span><ion-icon name="call-outline"></ion-icon> +996 (111) 222 333</span>
+        <ul>
+            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="/assets/img/logo.jpeg" alt="logo">Accounting Kyrgyzstan</a>
+        </div>
+        <div class="toggle">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+
+        $(function() {
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active"))
+                {
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                }
+                else 
+                {
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            }); 
+        });
+
+    </script>
 
     <!---------------------------- Services Section ------------------------------->
     <div id = "center">
