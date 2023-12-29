@@ -35,18 +35,6 @@ header {
     border-radius: 7px;
 } 
 
-.nav_link:hover {
-    color: #fff;
-}
-
-.nav_link::after {
-    content: '';
-    height: 2px;
-    width: 100%;
-    background-color: black;
-    display: block;
-}
-
 #logo {
     border-radius: 10%;
     width: auto;
