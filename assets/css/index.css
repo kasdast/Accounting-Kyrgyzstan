@@ -134,18 +134,51 @@ nav a:hover {
     
 }
 
-.services_header h1{
-    
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #e3edf7;
 }
 
-.services_content h3 {
-    
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.services_content p {
-    
+label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
+input[type = "radio"] {
+    display: none;
+}
+.accordion .content {
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;   
+}
+
+.accordion input[type = "radio"]:checked + label + .content {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type = "radio"]:checked + label::before {
+    content: '-';
+}
 
 @media screen and (max-width: 600px) {
     nav {
