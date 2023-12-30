@@ -27,13 +27,12 @@ nav {
     padding: 5px 20px;
     display: flex;
     align-items: center;
-    
+
     /*
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
     height: 70px;
     z-index: 1;
     */
@@ -83,29 +82,6 @@ nav a:hover {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
-    nav {
-        display: block;
-        position: relative;
-        padding: 15px 20px;
-    }
-
-    .menu {
-        margin-top: 15px;
-        display: none;
-    }
-
-    .menu.active, .toggle {
-        display: block;
-    }
-
-    .toggle {
-        position: absolute;
-        top: 15px;
-        right: 20px; 
-    }
-}
-
 .footer {
     display: flex;
     align-items: center;
@@ -148,6 +124,56 @@ nav a:hover {
     border-radius: 2.5%;
 }
 */
+
+.services_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    gap: 150px;
+    
+}
+
+.services_header h1{
+    
+}
+
+.services_content h3 {
+    
+}
+
+.services_content p {
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: none;
+    }
+
+    .menu.active, .toggle {
+        display: block;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px; 
+    }
+
+    .services_section {
+        display: block;
+    }
+
+}
 
 #about_img {
     border-radius: 10%;
