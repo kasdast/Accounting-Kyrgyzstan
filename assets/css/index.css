@@ -113,23 +113,12 @@ nav a:hover {
     color: #222;
 }
 
-
-/*
-#banner {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    padding: 0px 25px;
-    margin-top: 20px;
-    border-radius: 2.5%;
-}
-*/
-
 .services_section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px;
+    gap: 100px;
 }
 
 .accordion {
@@ -182,6 +171,33 @@ input[type = "radio"] {
     content: '-';
 }
 
+.more_info_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    gap: 100px;
+}
+
+.more_info_img_container {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    overflow: hidden;
+}
+
+.more_info_img_container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.more_info_content {
+    max-width: 600px;
+    text-align: justify;
+}
+
+
 
 @media screen and (max-width: 600px) {
     nav {
@@ -207,6 +223,18 @@ input[type = "radio"] {
 
     .services_section {
         display: block;
+    }
+
+    .services_header {
+        text-align: center;
+    }
+
+    .more_info_section {
+        display: block;
+    }
+
+    .more_info_content h1 {
+        text-align: center;
     }
 
 }
