@@ -130,8 +130,10 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px;
-    gap: 150px;
-    
+}
+
+.accordion {
+    max-width: 600px;
 }
 
 .accordion li {
@@ -179,6 +181,7 @@ input[type = "radio"] {
 .accordion input[type = "radio"]:checked + label::before {
     content: '-';
 }
+
 
 @media screen and (max-width: 600px) {
     nav {
