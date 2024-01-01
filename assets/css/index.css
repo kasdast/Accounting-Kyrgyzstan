@@ -115,10 +115,10 @@ nav a:hover {
 
 .services_section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 5px 20px;
-    gap: 100px;
+    gap: 150px;
 }
 
 .accordion {
@@ -173,7 +173,7 @@ input[type = "radio"] {
 
 .more_info_section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 5px 20px;
     gap: 100px;
@@ -193,13 +193,15 @@ input[type = "radio"] {
 }
 
 .more_info_content {
+    min-width: 200px;
     max-width: 600px;
     text-align: justify;
+    flex-shrink: 2;
 }
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     nav {
         display: block;
         position: relative;
@@ -229,12 +231,17 @@ input[type = "radio"] {
         text-align: center;
     }
 
+    .accordion {
+        max-width: none;
+    }
+
     .more_info_section {
         display: block;
     }
 
-    .more_info_content h1 {
+    .more_info_content {
         text-align: center;
+        max-width: none;
     }
 
 }
