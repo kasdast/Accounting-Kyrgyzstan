@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+    text-align: center; 
+}
+
+header {
+    background-color: lightblue;
+    padding: 2em 0;
+    margin: 5px;
+}
+
+.main {
+    display: flex;
+    flex: 1; 
+}
+
+main {
+    background-color: lightblue;
+    padding: 2em 0;
+    margin: 5px;
+    flex: 2 1 150px;
+}
+
+.left {
+    background-color: lightblue;
+    padding: 2em 0;
+    margin: 5px;
+    flex: 3 3 150px;
+}
+
+footer {
+    background-color: lightblue;
+    padding: 2em 0;
+    margin: 5px;
+}
+
+@media all and (max-width: 550px) {
+    .main {
+        flex-direction: column;
+    }
+
+}

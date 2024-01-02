@@ -180,7 +180,7 @@ input[type = "radio"] {
 }
 
 .more_info_img_container {
-    min-width: 320px;
+    max-width: 380px;
     border-radius: 8px;
     height: auto;
     overflow: hidden;
