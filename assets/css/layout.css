@@ -11,6 +11,29 @@ body {
     font-size: 3em; 
 }
 
+/* Website Layout */
+
+section {
+    display: flex;
+    flex: 1;
+}
+
+.title {
+    background-color: lightblue;
+    padding: 2em 0;
+    margin: 5px;
+    flex: 2 1 150px;
+    text-align: center;
+}
+
+.content {
+    background-color: lightblue;
+    margin: 5px;
+    flex: 3 3 150px;
+}
+
+/*---------------*/
+
 /* Navigation Bar */
 a, a:hover {
     text-decoration: none;
@@ -67,28 +90,61 @@ nav a:hover {
 }
 /*---------------*/
 
-/* Website Layout */
 
-section {
+/* Accordion */
+.accordion {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #e3edf7;
+}
+
+.accordion li label {
     display: flex;
-    flex: 1;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-.title {
-    background-color: lightblue;
-    padding: 2em 0;
-    margin: 5px;
-    flex: 2 1 150px;
+label::before {
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
-.content {
-    background-color: lightblue;
-    padding: 2em 0;
-    margin: 5px;
-    flex: 3 3 150px;
+input[type = "radio"] {
+    display: none;
+}
+.accordion .accordion_content {
+    color: #555;
+    font-size: 0.5em;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;   
 }
 
+.accordion input[type = "radio"]:checked + label + .accordion_content {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.accordion input[type = "radio"]:checked + label::before {
+    content: '-';
+}
 /*---------------*/
+
 
 /* Images */
 .img_container {
