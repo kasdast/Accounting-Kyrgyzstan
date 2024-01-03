@@ -23,6 +23,7 @@ section {
     padding: 2em 0;
     margin: 5px;
     flex: 2 1 150px;
+    width: 100%;
     text-align: center;
 }
 
@@ -33,6 +34,31 @@ section {
 }
 
 /*---------------*/
+
+/* Banner */
+.banner 
+{
+    background-color: lightblue;
+    padding: 0.5em 0;
+    margin: 5px;
+    width: 100%;
+}
+
+.banner_container {
+    margin: 0 auto;
+    max-width: 60%; 
+    background-color: aquamarine;
+    overflow: hidden;
+}
+
+.banner_container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*---------------*/
+
 
 /* Navigation Bar */
 a, a:hover {
@@ -147,6 +173,8 @@ input[type = "radio"] {
 
 
 /* Images */
+
+/* Initial Layout:
 .img_container {
     margin: 0 auto;
     max-width: 100%; 
@@ -159,6 +187,8 @@ input[type = "radio"] {
     height: auto;
     display: block;
 }
+*/
+
 /*---------------*/
 
 /* Footer */
@@ -195,7 +225,41 @@ footer a:hover {
 }
 /* -------------- */
 
+/* Rest Of The Page */
+.title2 {
+    background-color: lightblue;
+    padding: 2em 0;
+    margin: 5px;
+    flex: 2 1 150px;
+    text-align: center;
+    width: 100%;
+}
 
+.content2 {
+    background-color: lightblue;
+    padding: 2em 0;
+    margin: 5px;
+    flex: 3 3 150px;
+    text-align: center;
+}
+
+.title3 {
+    background-color: lightblue;
+    padding: 2em 0;
+    margin: 5px;
+    flex: 2 1 150px;
+    text-align: center;
+    width: 100%;
+}
+
+.content3 {
+    background-color: lightblue;
+    padding: 2em 0;
+    margin: 5px;
+    flex: 3 3 150px;
+    text-align: center;
+}
+/* -------------- */
 
 @media all and (max-width: 1200px) {
     section {
