@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>БУХГАЛТЕРСКИЕ УСЛУГИ | БИШКЕК | Accounting Kyrgyzstan</title>
-    <link rel = "stylesheet" type = "text/css" href = "/assets/css/index.css">
+    <link rel="stylesheet" type = "text/css" href="/assets/css/layout.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 
-    <!---------------------------- Navigation Bar ------------------------------->
-    <nav>
-        <div class="logo">
-            <a href="/html-folder/index.html"><img src="/assets/img/logo.jpeg" alt="logo">Accounting Kyrgyzstan</a>
-        </div>
-        <div class="toggle">
-            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
-        </div>
-        <ul class="menu">
-            <li><a href="/html-folder/about.html">О нас</a></li>
-            <li><a href="/html-folder/services.html">Услуги</a></li>
-            <li><a href="/html-folder/contact.html">Контакты</a></li>
-        </ul>
-    </nav>
-    <!------------------------------------------------------------------------------>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/html-folder/index.html"><img src="/assets/img/logo.jpeg" alt="logo">Accounting Kyrgyzstan</a>
+            </div>
+            <div class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </div>
+            <ul class="menu">
+                <li><a href="/html-folder/about.html">О нас</a></li>
+                <li><a href="/html-folder/services.html">Услуги</a></li>
+                <li><a href="/html-folder/contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-------------------- Script For Responsive Navigation Bar ----------------------->
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -49,77 +49,84 @@
     </script>
     <!------------------------------------------------------------------------------>
 
-    
-    <!---------------------------- Services Section ------------------------------->
-    <div class = "services_section">
-        
-        <div class = "services_header">
+    <section>
+        <div class = "banner">
+            <div class="banner_container">
+                <img src="/assets/img/img1.jpeg" alt="picture">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class = "title">
             <h1>Услуги</h1>
         </div>
-        
-        <ul class = "accordion">
-            <li>
-                <input type="radio" name = "accordion" id = "first" checked>
-                <label for="first">Ведение бухгалтерского и налогового учета во всех программах</label>
-                <div class = "content">
-                    <p>Бухгалтерский и налогового учет ведется в бухгалтерской программе «1С Бухгалтерия» и в государственных программах «Salyk» (ЭТТН, ЭСФ), а также поможем выбрать подходящую систему налогообложения и оптимизировать налоговую нагрузку с учетом специфики предприятия.</p>
-                </div>
-            </li>
-            <li>
-                <input type="radio" name = "accordion" id = "second">
-                <label for="second">Подготовка и сдача всех нужных отчетов в государственные органы</label>
-                <div class = "content">
-                    <p>Подготовка и сдача налоговых и бухгалтерских отчетов - это важный процесс для любого бизнеса, требующий соблюдения законодательства и правил учета.</p>    
-                </div>
-            </li>
-            <li>
-                <input type="radio" name = "accordion" id = "third">
-                <label for="third">Проведение экспресс-аудита и восстановление бухгалтерского учета</label>
-                <div class = "content">
-                    <p>Проверим и укажем на все возможные риски и ошибки при ведении вашей бухгалтерии. Поможем выстроить правильный бухгалтерский учет, разработать и внедрить учетную политику, а также восстановить систему бухгалтерского учета.</p>
-                </div>
-            </li>
-        </ul>
-
-    </div>
-    <!------------------------------------------------------------------------------>
-
-
-    <!---------------------------- More Info Section ------------------------------->    
-    <div class = "more_info_section">
-        <div class = "more_info_img_container">
-            <img src = "/assets/img/img4.jpg" alt = "Picture">
+        <div class="content">
+            <ul class = "accordion">
+                <li>
+                    <input type="radio" name = "accordion" id = "first" checked>
+                    <label for="first">Ведение бухгалтерского и налогового учета во всех программах</label>
+                    <div class = "accordion_content">
+                        <p>Бухгалтерский и налогового учет ведется в бухгалтерской программе «1С Бухгалтерия» и в государственных программах «Salyk» (ЭТТН, ЭСФ), а также поможем выбрать подходящую систему налогообложения и оптимизировать налоговую нагрузку с учетом специфики предприятия.</p>
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name = "accordion" id = "second">
+                    <label for="second">Подготовка и сдача всех нужных отчетов в государственные органы</label>
+                    <div class = "accordion_content">
+                        <p>Подготовка и сдача налоговых и бухгалтерских отчетов - это важный процесс для любого бизнеса, требующий соблюдения законодательства и правил учета.</p>    
+                    </div>
+                </li>
+                <li>
+                    <input type="radio" name = "accordion" id = "third">
+                    <label for="third">Проведение экспресс-аудита и восстановление бухгалтерского учета</label>
+                    <div class = "accordion_content">
+                        <p>Проверим и укажем на все возможные риски и ошибки при ведении вашей бухгалтерии. Поможем выстроить правильный бухгалтерский учет, разработать и внедрить учетную политику, а также восстановить систему бухгалтерского учета.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <div class = "more_info_content">
-            <h1 class = "heading">Больше о нас</h1>
+    </section>
+
+    <section>
+        <div class = "title2">
+            <h1>Больше о нас</h1>
+        </div>
+        <div class="content2">
             <p>Наша команда экспертов в области бухгалтерии готова помочь клиентам обеспечить точность, надежность и соблюдение всех требований законодательства в сфере учета и налогообложения. Мы стремимся быть надежным партнером для каждого клиента, обеспечивая профессиональное обслуживание и индивидуальный подход к каждому бизнесу.</p>
         </div>
-    </div>
-    <!------------------------------------------------------------------------------>
+    </section>
 
+    <section>
+        <div class = "title3">
+            <div class="img_container">
+                image
+            </div>
+        </div>
+        <div class="content3">
+            <h1>Следите за нами в социальных сетях</h1>
+            <p>Link to instagram</p>
+        </div>
+    </section>
 
-    <!---------------------------- Social Media Section ------------------------------->    
-    <h1 class = "heading">Следите за нами в социальных сетях</h1>
-    
-    <img src = "/assets/img/art1.jpg" alt = "Picture" class = "social_img">
-    <img src = "/assets/img/art2.jpeg" alt = "Picture" class = "social_img">
-    <img src = "/assets/img/art3.jpg" alt = "Picture" class = "social_img">
-
-    <!-- Social Button -->
+    <!-- Social Button 
     <div id = "social_button">
         <a href = "https://www.instagram.com/accounting_kyrgyzstan/" target = "_blank"><button>Social</button></a>
     </div> 
-    <!------------------------------------------------------------------------------>
+    -->
 
-    <!---------------------------------------- Footer ------------------------------->    
-    <div class="footer">
+    <!--
+        <div class="img_container">
+            <img src="/assets/img/img4.jpg" alt="picture">
+        </div>
+    -->
+
+    <footer>
         <span><ion-icon name="call-outline"></ion-icon> +996 (111) 222 333</span>
         <ul>
             <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
             <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
         </ul>
-    </div>
-    <!------------------------------------------------------------------------------>
-    
+    </footer>
 </body>
 </html>
