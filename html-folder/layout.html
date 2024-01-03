@@ -5,11 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Websit Layout(For Practice)</title>
     <link rel="stylesheet" type = "text/css" href="/assets/css/layout.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <header>
-        HEADER
+        <nav>
+            <div class="logo">
+                <a href="/html-folder/index.html"><img src="/assets/img/logo.jpeg" alt="logo">Accounting Kyrgyzstan</a>
+            </div>
+            <div class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </div>
+            <ul class="menu">
+                <li><a href="/html-folder/about.html">О нас</a></li>
+                <li><a href="/html-folder/services.html">Услуги</a></li>
+                <li><a href="/html-folder/contact.html">Контакты</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-------------------- Script For Responsive Navigation Bar ----------------------->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+
+        $(function() {
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active"))
+                {
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                }
+                else 
+                {
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            }); 
+        });
+
+    </script>
+    <!------------------------------------------------------------------------------>
+
 
     <section>
         <div class = "title">
