@@ -18,6 +18,25 @@ header {
     margin: 5px;
 }
 
+section {
+    display: flex;
+    flex: 1;
+}
+
+.title {
+    background-color: lightblue;
+    padding: 2em 0;
+    margin: 5px;
+    flex: 2 1 150px;
+}
+
+.content {
+    background-color: lightblue;
+    padding: 2em 0;
+    margin: 5px;
+    flex: 3 3 150px;
+}
+
 .main {
     display: flex;
     flex: 1; 
@@ -63,6 +82,10 @@ footer {
         flex-direction: column;
     }
     
+    section {
+        flex-direction: column;
+    }
+
     .img_container {
         max-width: 90%;
     }
