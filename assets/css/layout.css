@@ -68,9 +68,6 @@ nav a:hover {
 /*---------------*/
 
 /* Website Layout */
-header {
-    margin: 5px;
-}
 
 section {
     display: flex;
@@ -91,11 +88,6 @@ section {
     flex: 3 3 150px;
 }
 
-footer {
-    background-color: lightblue;
-    padding: 2em 0;
-    margin: 5px;
-}
 /*---------------*/
 
 /* Images */
@@ -112,6 +104,40 @@ footer {
     display: block;
 }
 /*---------------*/
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #ef4b3f;
+    margin-top: auto;
+    width: 100%;
+    font-size: 0.5em;
+}
+
+footer span {
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer li {
+    margin: 0px 5px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #222;
+}
+/* -------------- */
 
 
 
@@ -146,7 +172,6 @@ footer {
         right: 20px; 
     }
     /* -------------- */
-
 }
 
 @media screen and (max-width: 480px) {
