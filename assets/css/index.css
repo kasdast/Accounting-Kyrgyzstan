@@ -31,6 +31,7 @@ section {
     background-color: lightblue;
     margin: 5px;
     flex: 3 3 150px;
+    padding: 2em 0;
 }
 
 /*---------------*/
@@ -117,58 +118,66 @@ nav a:hover {
 /*---------------*/
 
 
-/* Accordion */
-.accordion {
-    max-width: 90%;
-    margin: 0 auto;
+/* Collapsible List */
+.service_list {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+
+    /*max-width: 700px;*/
+
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;   
 }
 
-.accordion li {
-    list-style: none;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    background: #e3edf7;
-}
-
-.accordion li label {
+.service {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 500;
 }
 
-label::before {
-    content: '+';
-    margin-right: 10px;
-    font-size: 24px;
-    font-weight: 600;
+.service h3 {
+    font-size: 1.8rem;
 }
 
-input[type = "radio"] {
-    display: none;
-}
-.accordion .accordion_content {
-    color: #555;
-    font-size: 0.5em;
-    padding: 0 10px;
-    line-height: 26px;
+.service_info {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;   
+    transition: max-height 1s ease;
 }
 
-.accordion input[type = "radio"]:checked + label + .accordion_content {
-    max-height: 400px;
-    padding: 10px 10px 20px;
+.service_info p {
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.4rem;
 }
 
-.accordion input[type = "radio"]:checked + label::before {
-    content: '-';
+.service_list.active .service_info {
+    max-height: 300px;
+    animation: fade 0.5s ease-in-out;
 }
+
+.service_list.active svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 /*---------------*/
 
 
@@ -237,14 +246,6 @@ input[type = "radio"] {
     flex: 3 3 150px;
     text-align: center;
 }
-
-.icon_container {
-    margin-top: 15px;
-}
-
-.icon-container a {
-    color: #fff;
-} 
 
 /* Footer */
 footer {
