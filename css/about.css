@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     font-size: 3em;
     text-align: center; 
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Navigation Bar */
@@ -34,6 +38,7 @@ nav a:hover {
 
 .logo {
     flex: 1;
+    
 }
 
 .logo a {
@@ -71,20 +76,23 @@ nav a:hover {
 section {
     display: flex;
     flex: 1; 
+    align-items: center;
+    padding: 0 15vh;
 }
 
 .title {
-    background-color: lightblue;
     padding: 2em 0.75em;
     margin: 5px;
     flex: 2 1 150px;
     width: 100%;
     text-align: justify;
+    text-align: left;
+    
 }
 
 .title h1 {
     font-size: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.4em;
 }
 
 .title p {
@@ -92,7 +100,6 @@ section {
 }
 
 .content {
-    background-color: lightblue;
     padding: 2em 0;
     margin: 5px;
     flex: 3 3 150px;
@@ -147,13 +154,23 @@ footer a:hover {
     display: block;
 }
 
+
 @media all and (max-width: 1200px) {
     section {
         flex-direction: column;
+        padding: 0 0;
+    }
+
+    .img_container {
+        margin: 0 auto;
+        max-width: 80%; 
+        background-color: aquamarine;
+        overflow: hidden;
     }
 
     .title {
         text-align: center;
+        font-size: 0.6em;
     }
 
     /* Navigation Bar */
