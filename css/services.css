@@ -4,12 +4,16 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     font-size: 3em;
-    text-align: center; 
+    text-align: center;
+    font-family: 'Raleway', sans-serif; 
+
 }
 
 /* Navigation Bar */
@@ -18,7 +22,7 @@ a, a:hover {
 }
 
 nav {
-    background: #222;
+    background: #404040;
     padding: 5px 20px;
     display: flex;
     align-items: center;
@@ -71,6 +75,8 @@ nav a:hover {
 .container {
     display: flex;
     flex: 1;
+    padding: 10px;
+    padding-right: 20px;
 }
 
 section {
@@ -83,18 +89,25 @@ section {
 
 .title {
     background-color: lightblue;
-    padding: 2em 0.75em;
+    padding: 30px;
     margin: 5px;
     flex: 2 1 150px;
     width: 100%;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+
 }
 
 .content {
     background-color: lightblue;
-    padding: 2em 0;
+    padding: 20px;
     margin: 5px;
     flex: 3 3 150px;
     width: 100%;
+    font-size: 20px;
+    padding: 2em 0.75em;
+
 }
 
 /* Footer */
@@ -103,7 +116,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 10px 25px;
-    background: #ef4b3f;
+    background: #404040;
     margin-top: auto;
     width: 100%;
     font-size: 0.5em;

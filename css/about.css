@@ -14,6 +14,7 @@ body {
     font-size: 3em;
     text-align: center; 
     font-family: 'Raleway', sans-serif;
+    background-color: #fef9f3;
 }
 
 /* Navigation Bar */
@@ -22,7 +23,7 @@ a, a:hover {
 }
 
 nav {
-    background: #222;
+    background: #404040;
     padding: 5px 20px;
     display: flex;
     align-items: center;
@@ -112,7 +113,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 10px 25px;
-    background: #ef4b3f;
+    background: #404040;
     margin-top: auto;
     width: 100%;
     font-size: 0.5em;
