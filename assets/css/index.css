@@ -165,6 +165,7 @@ nav a:hover {
 
 svg {
     transition: transform 0.5s ease-in;
+    min-width: 15px;
 }
 
 @keyframes fade {
