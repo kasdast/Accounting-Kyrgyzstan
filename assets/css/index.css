@@ -13,56 +13,21 @@ body {
     font-family: 'Roboto', sans-serif; 
 }
 
-/* Website Layout */
+/* These styles applied to Multiple Elements */
 
 section {
     display: flex;
     flex: 1;
 }
 
-.title {
-    background-color: lightblue;
-    padding: 2em 0;
-    margin: 5px;
-    flex: 2 1 150px;
-    width: 100%;
-    text-align: center;
+.wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.content {
-    background-color: lightblue;
-    margin: 5px;
-    flex: 3 3 150px;
-    padding: 2em 0;
-}
 
 /*---------------*/
-
-/* Banner */
-.banner 
-{
-    background-color: lightblue;
-    padding: 3em 0;
-    margin: 5px;
-    width: 100%;
-}
-
-.banner_container {
-    margin: 0 auto;
-    max-width: 85%; 
-    background-color: aquamarine;
-    overflow: hidden;
-    border-radius: 15px;
-}
-
-.banner_container img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/*---------------*/
-
 
 /* Navigation Bar */
 a, a:hover {
@@ -122,8 +87,58 @@ nav a:hover {
 }
 /*---------------*/
 
+/* Banner */
+.banner 
+{
+    background-color: lightblue;
+    padding: 3em 0;
+
+    margin: 5px;
+    
+    width: 100%;
+}
+
+.banner_container {
+    margin: 0 auto;
+    max-width: 85%; 
+    background-color: aquamarine;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.banner_container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*---------------*/
+
+/* Title for Services */
+.title {
+    background-color: lightblue;
+    flex: 2 1 150px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper h1 {
+    font-size: 3em;
+}
+/*---------------*/
 
 /* Collapsible List */
+.content {
+    background-color: lightblue;
+    margin: 5px;
+    flex: 3 3 150px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+}
+
 .service_list {
     width: 90%;
     margin-right: auto;
@@ -144,7 +159,7 @@ nav a:hover {
 }
 
 .service h3 {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
 }
 
 .service_info {
@@ -156,7 +171,7 @@ nav a:hover {
 .service_info p {
     padding-top: 1rem;
     line-height: 1.6;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .service_list.active .service_info {
@@ -206,13 +221,19 @@ svg {
 
 /*---------------*/
 
+/* About Us*/
 .title2 {
     background-color: lightblue;
-    padding: 2em 0;
     margin: 5px;
     flex: 2 1 150px;
-    text-align: center;
-    width: 100%;
+    
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper h1 {
+    font-size: 3rem;
 }
 
 .content2 {
@@ -220,8 +241,14 @@ svg {
     padding: 2em 0;
     margin: 5px;
     flex: 3 3 150px;
-    text-align: center;
+    text-align: left;
 }
+
+.wrapper p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+/*---------------*/
 
 .title3 {
     background-color: lightblue;
@@ -320,8 +347,8 @@ footer a:hover {
 
     .toggle {
         position: absolute;
-        top: 15px;
-        right: 20px; 
+        top: 40px;
+        right: 35px; 
     }
     /* -------------- */
 
@@ -332,7 +359,7 @@ footer a:hover {
     /* -------------- */
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .img-container {
         max-width: 100%; 
     }
@@ -346,6 +373,11 @@ footer a:hover {
         font-size: 20px;
         letter-spacing: 1px;
         font-weight: 500;
+    }
+    .toggle {
+        position: absolute;
+        top: 35px;
+        right: 20px; 
     }
     /* -------------- */
 }   
