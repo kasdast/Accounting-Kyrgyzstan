@@ -1,137 +1,181 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-@font-face {
-    font-family: 'Marmelad';
-    src: url('/fonts/m/Marmelad.ttf');
+    box-sizing: border-box;
 }
 
-#header {
-    font-family:'AppleGothic';
-    font-weight: bold;
-    font-size: larger;
-    width: 100%;
-    height: 130px;
-    text-align: center;
-    color: black;
-    line-height: 130px;
-    margin-bottom: 0px;
-    float: left;
+body {
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    font-size: 3em;
+    text-align: center; 
+}
+
+/* Navigation Bar */
+a, a:hover {
+    text-decoration: none;
+}
+
+nav {
+    background: #222;
+    padding: 5px 20px;
+    display: flex;
     align-items: center;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #ef4b3f;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo a:hover {
+    color: #fff;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.toggle {
+    font-size: 30px;
+    display: none;
+}
+/*---------------*/
+
+section {
+    display: flex;
+    flex: 1; 
+}
+
+.title {
+    background-color: lightblue;
+    padding: 2em 0.75em;
+    margin: 5px;
+    flex: 2 1 150px;
+    width: 100%;
+    text-align: justify;
+}
+
+.title h1 {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.title p {
+    font-size: 0.5em;
+}
+
+.content {
+    background-color: lightblue;
+    padding: 2em 0;
+    margin: 5px;
+    flex: 3 3 150px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #ef4b3f;
+    margin-top: auto;
+    width: 100%;
+    font-size: 0.5em;
+}
+
+footer span {
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer li {
+    margin: 0px 5px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #222;
+}
+/* -------------- */
+
+.img_container {
+    margin: 0 auto;
+    max-width: 80%; 
+    background-color: aquamarine;
+    overflow: hidden;
 
 }
 
-#main {
-    color: black;
-    font-family: "Marmelad";
-    text-align: left;
-    width: 40%;
-    height: 500px;
-    float: left;
-    margin-left: 10px;
-    padding: 30px;
-    padding-left: 100px;
-    font-family: 'Marmelad';    
-}
-
-#aside {
-    color: rgb(255, 255, 255);
-    margin-top: 50px;
-    font-weight: bold;
-    width: 400px;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    background-color: #a5a4a4;
-    border-radius: 30px;
-    background-image: url(https://cdn.discordapp.com/attachments/1186475823209910331/1189990461755105290/logo.jpeg?ex=65a02bfb&is=658db6fb&hm=bae1c947d45b1e74557143b1cdb38bc0c089f8f581396beb7263a27774fbdc65&); 
-    line-height: 300px;
-    float: right;
-    margin-right: 150px;
-
-} 
-#aside img {
+.img_container img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
-#menu {
-    display: flex;
-    gap: 20px; 
-    padding-right: 100px;
-}
+@media all and (max-width: 1200px) {
+    section {
+        flex-direction: column;
+    }
 
-.links {
-    text-decoration: none;
-    color: #333; 
-}
+    .title {
+        text-align: center;
+    }
 
-#footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    height: 100px;
-    color: rgb(247, 247, 247);
-    float: left;
-    background-color: #FF904E;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* Navigation Bar */
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
 
-    
+    .menu {
+        margin-top: 15px;
+        display: none;
+    }
 
-}
+    .menu.active, .toggle {
+        display: block;
+    }
 
-a {
-    color: black;
-    text-decoration: none;
-}
-a:hover {
-    color: black;
-    text-decoration: underline;
-    
-}
-
-a h1 {
-    text-align: left;
-    padding-left: 100px;
-    line-height: 70px;
-}
-
-p {
- 
-    text-align: left;
-    font-size: 20px;
-    margin-left: 60px;
-}
-.pre_text b {
-    font-size: 45px;
-    text-align: left;
-}
-
-@font-face {
-    font-family: 'Marmelad';
-    src: url('/fonts/m/Marmelad.ttf');
-    font-family: 'Marmelad';
-}
-
-#main p {
-    font-family: 'Marmelad';
-    font-size: 25px; 
-    margin-top: 15px;
-}
-
-.icon {
-    display: flex;
-    position: relative;
-}
-#mail {
-    margin-right: 600px;
-}
-#whatsapp {
-    margin-left: 600px;
+    .toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px; 
+    }
+    /* -------------- */
 }
