@@ -42,16 +42,17 @@ section {
 .banner 
 {
     background-color: lightblue;
-    padding: 0.5em 0;
+    padding: 3em 0;
     margin: 5px;
     width: 100%;
 }
 
 .banner_container {
     margin: 0 auto;
-    max-width: 60%; 
+    max-width: 85%; 
     background-color: aquamarine;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .banner_container img {
@@ -321,6 +322,12 @@ footer a:hover {
         position: absolute;
         top: 15px;
         right: 20px; 
+    }
+    /* -------------- */
+
+    /* Banner */
+    .banner_container {
+        max-width: 90%;
     }
     /* -------------- */
 }
