@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mongolian&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
 * {
     margin: 0;
@@ -10,7 +11,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto','Raleway', sans-serif; 
 }
 
 /* These styles applied to Multiple Elements */
@@ -35,7 +36,7 @@ a, a:hover {
 }
 
 nav {
-    background: #222;
+    background: #404040;
     padding: 1.5em 2.5em;
     display: flex;
     align-items: center;
@@ -93,9 +94,9 @@ nav a:hover {
     background-color: lightblue;
     padding: 3em 0;
 
-    margin: 5px;
+    margin: 5px;  /* margin */
     
-    width: 100%;
+    max-width: 100%;
 }
 
 .banner_container {
@@ -120,6 +121,8 @@ nav a:hover {
     text-align: left;
     display: flex;
     align-items: center;
+
+    margin: 5px; /* margin */
 }
 
 .wrapper h1 {
@@ -130,7 +133,9 @@ nav a:hover {
 /* Collapsible List */
 .content {
     background-color: lightblue;
-    margin: 5px;
+
+    margin: 5px;  /* margin */
+
     flex: 3 3 150px;
     
     display: flex;
@@ -224,7 +229,9 @@ svg {
 /* About Us*/
 .title2 {
     background-color: lightblue;
-    margin: 5px;
+
+    margin: 5px;   /* margin */
+    
     flex: 2 1 150px;
     
     text-align: left;
@@ -239,7 +246,9 @@ svg {
 .content2 {
     background-color: lightblue;
     padding: 2em 0;
-    margin: 5px;
+
+    margin: 5px; /* margin */
+    
     flex: 3 3 150px;
     text-align: left;
 }
@@ -253,10 +262,12 @@ svg {
 .title3 {
     background-color: lightblue;
     padding: 2em 0;
-    margin: 5px;
+
+    margin: 5px; /* margin */
+    
     flex: 2 1 150px;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
 }
 
 .img_container {
@@ -275,7 +286,9 @@ svg {
 .content3 {
     background-color: lightblue;
     padding: 2em 0;
-    margin: 5px;
+
+    margin: 5px; /* margin */
+    
     flex: 3 3 150px;
     text-align: center;
 }
@@ -286,10 +299,10 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 10px 25px;
-    background: #ef4b3f;
+    background: #404040;
     margin-top: auto;
     width: 100%;
-    font-size: 0.5em;
+    font-size: 1.5em;
 }
 
 footer span {
@@ -327,6 +340,7 @@ footer a:hover {
     nav {
         display: block;
         position: relative;
+        
         padding: 1.5em 2.5em;
     }
 
