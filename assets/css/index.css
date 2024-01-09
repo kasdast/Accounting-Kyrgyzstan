@@ -255,10 +255,11 @@ svg {
 
 .wrapper p {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 /*---------------*/
 
+/* Social Media */
 .title3 {
     background-color: lightblue;
     padding: 2em 0;
@@ -275,6 +276,7 @@ svg {
     max-width: 80%; 
     background-color: aquamarine;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .img_container img {
@@ -291,18 +293,53 @@ svg {
     
     flex: 3 3 150px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.content3 h1 {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 2.5rem;
+}
+
+.btn {
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #F7811B;
+    width: 160px;
+    padding: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 55px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    box-shadow: 0 0 20px rgba(0,0,0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*---------------*/
 
 /* Footer */
 footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 25px;
+    padding: 1.5em 2.5em;
     background: #404040;
     margin-top: auto;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 footer span {
@@ -374,9 +411,6 @@ footer a:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .img-container {
-        max-width: 100%; 
-    }
 
     /* Navigation Bar */
     nav {
@@ -392,6 +426,35 @@ footer a:hover {
         position: absolute;
         top: 35px;
         right: 20px; 
+    }
+    /* -------------- */
+
+    /* Services */
+    .title h1 {
+        font-size: 2.5rem;
+    }
+    /* -------------- */
+
+    /* About us */
+    .title2 h1 {
+        font-size: 2.5rem;
+    }
+
+    .wrapper p {
+        font-size: 1.2rem;
+    }
+    /* -------------- */
+
+    /* Spcial Media */
+    .content3 h1 {
+        font-size: 2rem;
+    }
+    /* -------------- */
+
+    /* Footer */
+    footer {
+        font-size: 1em;
+        padding: 1em 1em;
     }
     /* -------------- */
 }   
