@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mongolian&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
 * {
@@ -8,10 +7,11 @@
 }
 
 body {
+    background-color: #F3D0B2;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto','Raleway', sans-serif; 
+    font-family: 'Raleway', sans-serif; 
 }
 
 /* These styles applied to Multiple Elements */
@@ -19,6 +19,7 @@ body {
 section {
     display: flex;
     flex: 1;
+    margin-bottom: 8rem;
 }
 
 .wrapper {
@@ -91,18 +92,13 @@ nav a:hover {
 /* Banner */
 .banner 
 {
-    background-color: lightblue;
     padding: 3em 0;
-
-    margin: 5px;  /* margin */
-    
     max-width: 100%;
 }
 
 .banner_container {
     margin: 0 auto;
     max-width: 85%; 
-    background-color: aquamarine;
     overflow: hidden;
     border-radius: 15px;
 }
@@ -116,13 +112,10 @@ nav a:hover {
 
 /* Title for Services */
 .title {
-    background-color: lightblue;
     flex: 2 1 150px;
     text-align: left;
     display: flex;
     align-items: center;
-
-    margin: 5px; /* margin */
 }
 
 .wrapper h1 {
@@ -132,12 +125,7 @@ nav a:hover {
 
 /* Collapsible List */
 .content {
-    background-color: lightblue;
-
-    margin: 5px;  /* margin */
-
-    flex: 3 3 150px;
-    
+    flex: 3 3 150px;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,37 +194,18 @@ svg {
 
 /*---------------*/
 
-
-/* Images */
-
-/* Initial Layout:
-.img_container {
-    margin: 0 auto;
-    max-width: 100%; 
-    background-color: aquamarine;
-    overflow: hidden;
-}
-
-.img_container img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-*/
-
-/*---------------*/
-
 /* About Us*/
 .title2 {
-    background-color: lightblue;
-
-    margin: 5px;   /* margin */
-    
     flex: 2 1 150px;
-    
     text-align: left;
     display: flex;
     align-items: center;
+}
+
+.wrapper_info {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper h1 {
@@ -244,28 +213,20 @@ svg {
 }
 
 .content2 {
-    background-color: lightblue;
     padding: 2em 0;
-
-    margin: 5px; /* margin */
-    
     flex: 3 3 150px;
     text-align: left;
 }
 
-.wrapper p {
+.wrapper_info p {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 /*---------------*/
 
 /* Social Media */
 .title3 {
-    background-color: lightblue;
     padding: 2em 0;
-
-    margin: 5px; /* margin */
-    
     flex: 2 1 150px;
     text-align: center;
     max-width: 100%;
@@ -274,7 +235,6 @@ svg {
 .img_container {
     margin: 0 auto;
     max-width: 80%; 
-    background-color: aquamarine;
     overflow: hidden;
     border-radius: 15px;
 }
@@ -286,11 +246,7 @@ svg {
 }
 
 .content3 {
-    background-color: lightblue;
     padding: 2em 0;
-
-    margin: 5px; /* margin */
-    
     flex: 3 3 150px;
     text-align: center;
     display: flex;
@@ -367,6 +323,7 @@ footer a:hover {
 @media all and (max-width: 1200px) {
     section {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     .img_container {
@@ -408,6 +365,15 @@ footer a:hover {
         max-width: 90%;
     }
     /* -------------- */
+
+    /* About Us */
+    .wrapper_info {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* -------------- */
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -440,7 +406,7 @@ footer a:hover {
         font-size: 2.5rem;
     }
 
-    .wrapper p {
+    .wrapper_info p {
         font-size: 1.2rem;
     }
     /* -------------- */
