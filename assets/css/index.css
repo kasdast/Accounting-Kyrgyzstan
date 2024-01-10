@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 * {
     margin: 0;
@@ -60,7 +60,6 @@ nav a:hover {
     align-items: center;
     font-size: 30px;
     letter-spacing: 1px;
-    font-weight: 500;
 }
 
 .logo a:hover {
@@ -136,9 +135,6 @@ nav a:hover {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
-
-    /*max-width: 700px;*/
-
     margin-top: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid black;
@@ -165,6 +161,7 @@ nav a:hover {
     padding-top: 1rem;
     line-height: 1.6;
     font-size: 1rem;
+    font-weight: 550;
 }
 
 .service_list.active .service_info {
@@ -220,7 +217,7 @@ svg {
 
 .wrapper_info p {
     font-size: 1.5rem;
-    font-weight: 600;
+    
 }
 /*---------------*/
 
@@ -268,7 +265,6 @@ svg {
     background: #F7811B;
     width: 160px;
     padding: 1em;
-    text-transform: uppercase;
     color: #fff;
     border-radius: 55px;
     cursor: pointer;
@@ -372,6 +368,10 @@ footer a:hover {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .wrapper_info p {
+        font-size: 1rem;
+    }
     /* -------------- */
     
 }
@@ -404,10 +404,6 @@ footer a:hover {
     /* About us */
     .title2 h1 {
         font-size: 2.5rem;
-    }
-
-    .wrapper_info p {
-        font-size: 1.2rem;
     }
     /* -------------- */
 
