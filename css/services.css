@@ -89,14 +89,30 @@ section {
 
 .title {
     background-color: lightblue;
-    padding: 30px;
+    padding:25px;
     margin: 5px;
-    flex: 2 1 150px;
+    flex: 3 1 150px;
     width: 100%;
-    font-size: 30px;
     text-align: center;
     align-items: center;
+    border-radius: 7px;
+
     
+}
+
+.title p {
+    font-size: 20px;
+    margin: 20px
+    
+}
+    
+.box {
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 7px
 }
 
 
@@ -151,11 +167,11 @@ footer a:hover {
 }
 /* -------------- */
 
-@media all and (min-width: 1200px) {
+/* @media all and (min-width: 1200px) {
     .title p {
         margin-top: 55px
     }
-}
+} */
 
 @media all and (max-width: 1200px) {
     .container {
