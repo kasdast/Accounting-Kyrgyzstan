@@ -72,11 +72,20 @@ nav a:hover {
 }
 /*---------------*/
 
+#main {
+    text-align: left;
+    font-size: 40px;
+    margin-top: 40px;
+    font-weight: lighter;
+    margin-left: 40px
+}
+
 .container {
     display: flex;
     flex: 1;
     padding: 10px;
     padding-right: 20px;
+    margin-top: 30px
 }
 
 section {
@@ -84,11 +93,12 @@ section {
     flex-direction: column;
     flex: 1;
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 5px;   
+     
+    
 }
 
 .title {
-    background-color: lightblue;
     padding:25px;
     margin: 5px;
     flex: 3 1 150px;
@@ -96,13 +106,29 @@ section {
     text-align: center;
     align-items: center;
     border-radius: 7px;
+}
 
-    
+#num1 {
+    background-image: url(https://www.stekaudit.ru/upload/resize_cache/iblock/5d9/600_480_1/PF1rBDlee9c.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+#num2 {
+    background-image: url(https://upinc.ru/wp-content/uploads/2023/03/951359b0-cad1-477f-adb7-12cda903d250-min.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+#num3 {
+    background-image: url(https://deaction.com/wp-content/uploads/2020/03/chto-takoe-audit-sajta-02-1100x445.jpg);
+    background-size: cover;
+    background-position: center
 }
 
 .title p {
     font-size: 20px;
-    margin: 20px
+    margin: 15px;
     
 }
     
@@ -112,22 +138,29 @@ section {
     align-items: center;
     text-align: center;
     background-color: #fff;
-    border-radius: 7px
+    border-radius: 3px
 }
 
 
 
 .content {
-    background-color: lightblue;
-    padding: 20px;
     margin: 5px;
     flex: 3 3 150px;
     width: 100%;
-    font-size: 20px;
-    padding: 2em 0.75em;
+    font-size: 18px;
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: lighter
 
 }
 
+.button {
+background-color: aquamarine;
+margin-bottom: 60px;
+width: 10%;
+align-items: center;
+margin: 50%
+}
 /* Footer */
 footer {
     display: flex;
