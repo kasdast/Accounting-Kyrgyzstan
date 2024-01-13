@@ -343,6 +343,7 @@ footer a:hover {
     .menu {
         margin-top: 15px;
         display: none;
+        text-align: center;
     }
 
     .menu.active, .toggle {
