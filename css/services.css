@@ -141,8 +141,6 @@ section {
     border-radius: 3px
 }
 
-
-
 .content {
     margin: 5px;
     flex: 3 3 150px;
@@ -154,13 +152,30 @@ section {
 
 }
 
-.button {
-background-color: aquamarine;
-margin-bottom: 60px;
-width: 10%;
-align-items: center;
-margin: 50%
+#buttonWrapper {
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center
 }
+
+#buttonWrapper a {
+    align-items: center;
+    background-color: #FF904E;
+    padding: 20px;
+    font-weight: lighter;
+    font-size: 30px;
+    border-radius: 15px;
+    color: #fff;
+}
+ 
+#buttonWrapper a:hover {
+    box-shadow: 3px 3px 5px black
+}
+
+
 /* Footer */
 footer {
     display: flex;
@@ -209,6 +224,11 @@ footer a:hover {
 @media all and (max-width: 1200px) {
     .container {
         flex-direction: column;
+    }
+
+    #sec2 {
+        margin-top: 40px;
+        margin-bottom: 30px;
     }
 
     /* Navigation Bar */
