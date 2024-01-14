@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif; 
+
+}
+
+/* Navigation Bar */
+a, a:hover {
+    text-decoration: none;
+}
+
+nav {
+    background: #404040;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    font-weight: lighter
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #ef4b3f;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logo a:hover {
+    color: #fff;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    padding: 15px 10px;
+    font-size: 16px;
+}
+
+.toggle {
+    font-size: 30px;
+    display: none;
+}
+/*---------------*/
+
+#main {
+    text-align: left;
+    font-size: 40px;
+    margin-top: 40px;
+    font-weight: lighter;
+    margin-left: 40px
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    padding-right: 20px;
+    margin-top: 30px
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 5px;
+    margin-right: 5px;  
+    /* border: solid 1px black; */
+    left: 2000px
+     
+    
+}
+
+.title {
+    padding:25px;
+    margin: 5px;
+    flex: 3 1 150px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+#num1 {
+    background-image: url(https://www.stekaudit.ru/upload/resize_cache/iblock/5d9/600_480_1/PF1rBDlee9c.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+#num2 {
+    background-image: url(https://static.tildacdn.com/tild3031-6131-4536-a264-666531626430/J6gkj7CyZzg.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+#num3 {
+    background-image: url(https://deaction.com/wp-content/uploads/2020/03/chto-takoe-audit-sajta-02-1100x445.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.title p {
+    font-size: 20px;
+    margin: 15px;
+    
+}
+    
+.box {
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 3px
+}
+
+.content {
+    margin: 5px;
+    flex: 3 3 150px;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: lighter;
+    border: solid 1px black;
+    border-radius: 7px;
+
+}
+
+#buttonWrapper {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center
+}
+
+#buttonWrapper a {
+    align-items: center;
+    background-color: #FF904E;
+    padding: 20px;
+    font-weight: lighter;
+    font-size: 30px;
+    border-radius: 15px;
+    color: #fff;
+}
+ 
+#buttonWrapper a:hover {
+    box-shadow: 3px 3px 5px black
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #404040;
+    margin-top: auto;
+    width: 100%;
+    font-size: 0.5em;
+}
+
+
+
+footer span {
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer li {
+    margin: 0px 5px;
+    margin-top: 5px
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #222;
+}
+/* -------------- */
+
+/* @media all and (min-width: 1200px) {
+    .title p {
+        margin-top: 55px
+    }
+} */
+
+@media all and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #sec2 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    /* Navigation Bar */
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: none;
+    }
+
+    .menu.active, .toggle {
+        display: block;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px; 
+    }
+    /* -------------- */
+}
