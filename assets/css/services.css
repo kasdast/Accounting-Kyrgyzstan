@@ -129,10 +129,13 @@ section {
 
 .content h1 {
     margin-bottom: 1.5em;
+    border-radius: 15px;
+
 }
 
 .content p {
     max-width: 350px;
+    font-size: 1.2em;
 }
 
 /* ------------ */
@@ -234,6 +237,10 @@ footer a:hover {
         right: 35px; 
     }
     /* -------------- */
+
+    .content p {
+        max-width: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
