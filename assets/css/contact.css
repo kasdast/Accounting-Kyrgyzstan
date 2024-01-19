@@ -80,32 +80,93 @@ section {
     background-color: lightblue;
     padding: 2em 0.75em;
     margin: 5px;
-    flex: 2 1 150px;
+    flex: 1 1 150px;
     max-width: 100%;
 }
 
-
+/* Contact Form */
 .content {
-    background-color: lightblue;
-    padding: 2em 0;
     margin: 5px;
-    flex: 3 3 150px;
+    flex: 1 1 150px;
     max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.img_container {
-    margin: 0 auto;
-    max-width: 80%; 
-    background-color: aquamarine;
-    overflow: hidden;
-
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
 }
 
-.img_container img {
-    width: 100%;
-    height: auto;
-    display: block;
+.contact-title h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
 }
+
+.contact-title hr {
+    border: none;
+    width: 140px;
+    height: 5px;
+    background-color: #222;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500px;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact button {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #F7811B;
+    border-radius: 55px;
+    border: none;
+    cursor: pointer;
+    width: 160px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.contact button:hover, .contact button:focus, .contact button:active {
+    box-shadow: 0 0 20px rgba(0,0,0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* ------------- */
 
 /* Footer */
 footer {
@@ -176,7 +237,12 @@ footer a:hover {
         right: 35px; 
     }
     /* -------------- */
+}
 
+@media screen and (max-width: 800px) {
+    .contact-inputs {
+        width: 80vw;
+    }
 }
 
 @media screen and (max-width: 600px) {
