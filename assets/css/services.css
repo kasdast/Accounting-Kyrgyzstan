@@ -109,7 +109,7 @@ section {
 .title {
     max-width: 100%;
     margin: 10px;
-    flex: 1 1 150px;
+    flex: 1;
 }
 
 .content {
@@ -117,7 +117,9 @@ section {
     padding-top: 2em;
     flex: 1 1 150px;
     max-width: 100%;
-
+    
+    
+    
     /*
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -130,7 +132,6 @@ section {
 .content h1 {
     margin-bottom: 1.5em;
     border-radius: 15px;
-
 }
 
 .content p {
