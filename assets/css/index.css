@@ -97,7 +97,7 @@ nav a:hover {
 
 .banner_container {
     margin: 0 auto;
-    max-width: 85%; 
+    max-width: 95%; 
     overflow: hidden;
     border-radius: 15px;
 }
@@ -199,10 +199,24 @@ svg {
     align-items: center;
 }
 
+.logo_container {
+    margin: 0 auto;
+    max-width: 70%; 
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.logo_container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .wrapper_info {
-    width: 50%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4em;
 }
 
 .wrapper h1 {
@@ -216,8 +230,9 @@ svg {
 }
 
 .wrapper_info p {
-    font-size: 1.5rem;
-    
+    font-size: 1.3rem;
+    max-width: 600px;
+    text-align: justify;
 }
 /*---------------*/
 
@@ -252,8 +267,8 @@ svg {
 }
 
 .content3 h1 {
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
     font-size: 2.5rem;
 }
 
@@ -319,7 +334,7 @@ footer a:hover {
 @media all and (max-width: 1200px) {
     section {
         flex-direction: column;
-        margin-bottom: 0;
+        margin-bottom: 4rem;
     }
 
     .img_container {
@@ -364,14 +379,30 @@ footer a:hover {
     /* -------------- */
 
     /* About Us */
+    .logo_container {
+        max-width: 30%;
+    }
+
+    .wrapper {
+        text-align: center;
+    }
+
     .wrapper_info {
-        width: 90%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .wrapper_info p {
-        font-size: 1rem;
+        text-align: justify;
+        font-size: 1.3rem;
+        max-width: none;
+    }
+    /* -------------- */
+
+    /* Social Media */
+    .img_container {
+        max-width: 50%;
     }
     /* -------------- */
     
@@ -379,13 +410,17 @@ footer a:hover {
 
 @media screen and (max-width: 600px) {
 
+    section {
+        margin-bottom: 2rem;
+    }
+
     /* Navigation Bar */
     nav {
         padding: 1em 1em;
     }
 
     .logo a {
-        font-size: 20px;
+        font-size: 15px;
         letter-spacing: 1px;
         font-weight: 500;
     }
@@ -398,19 +433,40 @@ footer a:hover {
 
     /* Services */
     .title h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
     /* -------------- */
 
     /* About us */
-    .title2 h1 {
-        font-size: 2.5rem;
+    .wrapper h1 {
+        font-size: 2.3rem;
+    }
+    
+    .logo_container {
+        max-width: 65%;
+    }
+
+    .wrapper {
+        margin-top: 3rem;
+    }
+
+    .wrapper_info {
+        margin-top: 3em;
+        width: 90%;
+    }
+
+    .wrapper_info p {
+        font-size: 1rem;
     }
     /* -------------- */
 
-    /* Spcial Media */
+    /* Social Media */
     .content3 h1 {
-        font-size: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .img_container {
+        max-width: 70%;
     }
     /* -------------- */
 
