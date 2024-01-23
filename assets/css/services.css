@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3D0B2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    font-family: 'Raleway', sans-serif; 
+}
+
+/* Navigation Bar */
+a, a:hover {
+    text-decoration: none;
+}
+
+nav {
+    background: #404040;
+    padding: 1.5em 2.5em;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav a:hover {
+    color: #ef4b3f;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.logo a:hover {
+    color: #fff;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu li {
+    padding: 15px 10px;
+    font-size: 18px;
+}
+
+.toggle {
+    font-size: 30px;
+    display: none;
+}
+/*---------------*/
+
+/* Content*/
+
+.main {
+    margin: 2rem 15px;
+}
+
+.main h3 {
+    font-size: 2.5em;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.img_container {
+    margin: 0 auto;
+    max-width: 100%; 
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.img_container img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.title {
+    max-width: 100%;
+    margin: 10px;
+    flex: 1;
+}
+
+.content {
+    margin: 10px;
+    padding-top: 2em;
+    flex: 1 1 150px;
+    max-width: 100%;
+    
+    
+    
+    /*
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    border: solid 1px black;
+    border-radius: 15px;
+    */
+}
+
+.content h1 {
+    margin-bottom: 1.5em;
+    border-radius: 15px;
+}
+
+.content p {
+    max-width: 350px;
+    font-size: 1.2em;
+}
+
+/* ------------ */
+
+/* Button */
+.btn {
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    background: #F7811B;
+    width: 160px;
+    padding: 1em;
+    color: #fff;
+    border-radius: 55px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    box-shadow: 0 0 20px rgba(0,0,0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/* ------------ */
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 2.5em;
+    background: #404040;
+    margin-top: auto;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+footer span {
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer li {
+    margin: 0px 5px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #222;
+}
+/* -------------- */
+
+@media all and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    /* Navigation Bar */
+    nav {
+        display: block;
+        position: relative;   
+        padding: 1.5em 2.5em;
+    }
+
+    .logo a {
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: none;
+        text-align: center;
+    }
+
+    .menu.active, .toggle {
+        display: block;
+    }
+
+    .toggle {
+        position: absolute;
+        top: 40px;
+        right: 35px; 
+    }
+    /* -------------- */
+
+    .content p {
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Navigation Bar */
+    nav {
+        padding: 1em 1em;
+    }
+
+    .logo a {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+    .toggle {
+        position: absolute;
+        top: 35px;
+        right: 20px; 
+    }
+    /* -------------- */
+
+    /* Footer */
+    footer {
+        font-size: 1em;
+        padding: 1em 1em;
+    }
+    /* -------------- */
+
+    /* Content */
+    .main h3 {
+        font-size: 1.5em;
+    }
+    /* -------------- */
+}   
