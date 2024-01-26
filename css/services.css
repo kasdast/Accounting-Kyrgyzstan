@@ -117,6 +117,7 @@ section {
     background-size: cover;
     background-position: center;
     min-height: 70%;
+    max-height: 70%;
 }
 
 #num2 {
@@ -225,6 +226,21 @@ padding-bottom: 10px;
         align-items: center
     }
 }
+
+@media all and (max-width: 425px) {.content1, .content2, .content3 {
+    margin: 5px;
+    flex: 3 3 150px;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: lighter;
+    border: solid 1px black;
+    border-radius: 7px;
+    min-height: 200px;   
+    margin-bottom: 100px; 
+}}
+
 
 #buttonWrapper a {
     align-items: center;
