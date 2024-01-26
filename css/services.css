@@ -23,10 +23,11 @@ a, a:hover {
 
 nav {
     background: #404040;
-    padding: 15px 20px;
+    padding: 15px 50px;
     display: flex;
     align-items: center;
-    font-weight: lighter
+    font-weight: lighter;
+    padding-left: 55px
 }
 
 nav a {
@@ -140,7 +141,7 @@ section {
     
 }
 
-.content p {
+.content1 p, .content2 p, .content3   p {
 font-weight: bolder;
 text-align: center;
 padding-bottom: 10px;
@@ -149,7 +150,7 @@ padding-bottom: 10px;
     
 
 
- .content {
+ @media all and (min-width: 1200px) {.content1, .content2, .content3 {
     margin: 5px;
     flex: 3 3 150px;
     width: 100%;
@@ -160,16 +161,69 @@ padding-bottom: 10px;
     border: solid 1px black;
     border-radius: 7px;
     min-height: 230px;
+    
+}}
+
+@media all and (max-width: 1200px) {.content1 {
+    margin: 5px;
+    flex: 3 3 150px;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: lighter;
+    border: solid 1px black;
+    border-radius: 7px;
+    margin-bottom: 130px;
+}}
+
+@media all and (max-width: 1200px) {.content2 {
+    margin: 5px;
+    flex: 3 3 150px;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: lighter;
+    border: solid 1px black;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}}
+
+@media all and (max-width: 1200px) {.content3 {
+    margin: 5px;
+    flex: 3 3 150px;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 20px;
+    text-align: left;
+    font-weight: lighter;
+    border: solid 1px black;
+    border-radius: 7px;
+}}
+
+@media all and (min-width: 1200px) {
+    #buttonWrapper {
+        display: flex;
+        margin-top: 150px;
+        margin-bottom: 50px;
+        width: 100%;
+        display: flex; 
+        justify-content: center; 
+        align-items: center
+    }
 }
 
-#buttonWrapper {
-    display: flex;
-    margin-top: 20vh;
-    margin-bottom: 50px;
-    width: 100%;
-    display: flex; 
-    justify-content: center; 
-    align-items: center
+@media all and (max-width: 1200px) {
+    #buttonWrapper {
+        display: flex;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: 100%;
+        display: flex; 
+        justify-content: center; 
+        align-items: center
+    }
 }
 
 #buttonWrapper a {
@@ -224,11 +278,6 @@ footer a:hover {
 }
 /* -------------- */
 
-/* @media all and (min-width: 1200px) {
-    .title p {
-        margin-top: 55px
-    }
-} */
 
 @media all and (max-width: 1200px) {
     .container {
