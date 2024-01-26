@@ -23,7 +23,7 @@ a, a:hover {
 
 nav {
     background: #404040;
-    padding: 5px 20px;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
     font-weight: lighter
@@ -114,19 +114,24 @@ section {
 #num1 {
     background-image: url(https://www.stekaudit.ru/upload/resize_cache/iblock/5d9/600_480_1/PF1rBDlee9c.jpg);
     background-size: cover;
-    background-position: center
+    background-position: center;
+    min-height: 70%;
 }
 
 #num2 {
     background-image: url(https://static.tildacdn.com/tild3031-6131-4536-a264-666531626430/J6gkj7CyZzg.jpg);
     background-size: cover;
-    background-position: center
+    background-position: center;
+    min-height: 70%;
+
 }
 
 #num3 {
     background-image: url(https://deaction.com/wp-content/uploads/2020/03/chto-takoe-audit-sajta-02-1100x445.jpg);
     background-size: cover;
-    background-position: center
+    background-position: center;
+    min-height: 70%;
+
 }
 
 .title p {
@@ -134,15 +139,14 @@ section {
     margin: 15px;
     
 }
-    
-.box {
-    display: flex;
-    margin-top: 200px;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 3px
+
+.content p {
+font-weight: bolder;
+text-align: center;
+padding-bottom: 10px;
 }
+    
+
 
 .content {
     margin: 5px;
@@ -187,7 +191,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 25px;
+    padding: 15px 25px;
     background: #404040;
     margin-top: auto;
     width: 100%;
