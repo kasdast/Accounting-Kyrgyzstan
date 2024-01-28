@@ -177,8 +177,7 @@ footer a:hover {
 
     .img_container {
         margin: 0 auto;
-        max-width: 80%; 
-        background-color: aquamarine;
+        max-width: 80%;
         overflow: hidden;
     }
 
