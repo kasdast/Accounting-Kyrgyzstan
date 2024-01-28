@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БУХГАЛТЕРСКИЕ УСЛУГИ | БИШКЕК | Accounting Kyrgyzstan</title>
+    <link rel="stylesheet" type = "text/css" href="/css/index.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/html/index.html"><img src="/assets/img/logo.jpeg" alt="logo">Accounting Kyrgyzstan</a>
+            </div>
+            <div class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </div>
+            <ul class="menu">
+                <li><a href="/html/about.html">О нас</a></li>
+                <li><a href="/html/services.html">Услуги</a></li>
+                <li><a href="/html/contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-------------------- Script For Responsive Navigation Bar ----------------------->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+
+        $(function() {
+            $(".toggle").on("click", function(){
+                if($(".menu").hasClass("active"))
+                {
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                }
+                else 
+                {
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                }
+            }); 
+        });
+
+    </script>
+    <!------------------------------------------------------------------------------>
+
+    <!-----------------------------Banner------------------------------------------->
+    <section>
+        <div class = "banner">
+            <div class="banner_container">
+                <img src="/assets/img/At the office-pana.jpg" alt="picture">
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------------------------------------------>
+    
+    <!-------------------------------- Collapsible List ------------------------------>
+    <section>
+        <div class = "title">
+            <div class="wrapper">
+                <h1>Услуги</h1>
+            </div>
+        </div>
+        <div class="content">
+            
+            <div class="service_list">
+                <div class="service">
+
+                    <h3>Ведение бухгалтерского и налогового учета во всех программах</h3>
+
+                    <svg width = "15" height = "10" viewbox = "0 0 42 25">
+                        <path d = "M3 3L21 21L39 3" fill = "transparant" stroke = "black" stroke-width = "7" stroke-linecap = "round"/>
+                    </svg>
+                </div>
+                <div class="service_info">
+                    <p>
+                        Бухгалтерский и налогового учет ведется в бухгалтерской программе «1С Бухгалтерия» и в государственных программах «Salyk» (ЭТТН, ЭСФ), а также поможем выбрать подходящую систему налогообложения и оптимизировать налоговую нагрузку с учетом специфики предприятия.    
+                    </p>
+                </div>
+            </div>
+
+            <div class="service_list">
+                <div class="service">
+                    <h3>Подготовка и сдача всех нужных отчетов в государственные органы</h3>
+
+                    <svg width = "15" height = "10" viewbox = "0 0 42 25">
+                        <path d = "M3 3L21 21L39 3" fill = "transparant" stroke = "black" stroke-width = "7" stroke-linecap = "round"/>
+                    </svg>
+                </div>
+                <div class="service_info">
+                    <p>
+                        Подготовка и сдача налоговых и бухгалтерских отчетов - это важный процесс для любого бизнеса, требующий соблюдения законодательства и правил учета.    
+                    </p>
+                </div>
+            </div>
+
+            <div class="service_list">
+                <div class="service">
+                    <h3>Проведение экспресс-аудита и восстановление бухгалтерского учета</h3>
+
+                    <svg width = "15" height = "10" viewbox = "0 0 42 25">
+                        <path d = "M3 3L21 21L39 3" fill = "transparant" stroke = "black" stroke-width = "7" stroke-linecap = "round"/>
+                    </svg>
+                </div>
+                <div class="service_info">
+                    <p>
+                        Проверим и укажем на все возможные риски и ошибки при ведении вашей бухгалтерии. Поможем выстроить правильный бухгалтерский учет, разработать и внедрить учетную политику, а также восстановить систему бухгалтерского учета.    
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="/js/app.js"></script>
+    <!------------------------------------------------------------------------------>
+
+    <section>
+        <div class = "title2">
+            <div class="logo_container">
+                <img src="/assets/img/logo.jpeg" alt="logo">
+            </div>
+        </div>    
+        <div class="content2">
+            <div class = "wrapper">
+                <h1>Больше о нас</h1>
+            </div>
+            <div class = "wrapper_info" >
+                <p>Наша команда экспертов в области бухгалтерии готова помочь клиентам обеспечить точность, надежность и соблюдение всех требований законодательства в сфере учета и налогообложения. Мы стремимся быть надежным партнером для каждого клиента, обеспечивая профессиональное обслуживание и индивидуальный подход к каждому бизнесу.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class = "title3">
+            <div class="img_container">
+                <img src="/assets/img/Collab-pana.jpg" alt="picture">
+            </div>
+        </div>
+        <div class="content3">
+                <h1>Следите за нами в социальных сетях</h1>
+
+                <a class = "btn" href = "https://www.instagram.com/accounting_kyrgyzstan/" target = "_blank">Перейти</a>
+            </div>            
+    </section>
+
+    <footer>
+        <span><ion-icon name="call-outline"></ion-icon> +996 (503) 600 616</span>
+        <ul>
+            <li><a href="https://www.instagram.com/accounting_kyrgyzstan/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
