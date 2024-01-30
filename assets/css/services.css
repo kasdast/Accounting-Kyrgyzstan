@@ -7,7 +7,6 @@
 }
 
 body {
-    background-color: #F3D0B2;
     height: 100vh;
     display: flex;
     flex-direction: column; 
@@ -175,15 +174,31 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5em 2.5em;
+    padding: 1em 2em;
     background: #404040;
     margin-top: auto;
     width: 100%;
     font-size: 1.2em;
 }
 
+.footer_contact {
+    display: flex;
+    flex-direction: column;
+}
+
 footer span {
     color: #fff;
+    margin-top: 5px;
+}
+
+ion-icon {
+    font-size: 28px;
+}
+
+footer span p {
+    display: inline;
+    margin-left: 10px;
+    font-size: 18px;
 }
 
 footer ul {
@@ -252,7 +267,7 @@ footer a:hover {
     }
 
     .logo a {
-        font-size: 20px;
+        font-size: 15px;
         letter-spacing: 1px;
         font-weight: 500;
     }
@@ -267,6 +282,14 @@ footer a:hover {
     footer {
         font-size: 1em;
         padding: 1em 1em;
+    }
+
+    footer span p {
+        font-size: 15px;
+    }
+
+    ion-icon {
+        font-size: 24px;
     }
     /* -------------- */
 
