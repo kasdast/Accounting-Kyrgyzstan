@@ -72,7 +72,6 @@ nav a:hover {
 /*---------------*/
 
 /* Content*/
-
 .main {
     margin: 2rem 15px;
 }
@@ -114,10 +113,11 @@ section {
 
 .content {
     margin: 10px;
-    padding-top: 2em;
+    padding: 2em 1em;
     flex: 1 1 150px;
     max-width: 100%;
-    
+    border: solid #212120 3px;
+    border-radius: 15px;
     
     
     /*
@@ -135,8 +135,9 @@ section {
 }
 
 .content p {
-    max-width: 350px;
+    max-width: 450px;
     font-size: 1.2em;
+    
 }
 
 /* ------------ */
@@ -255,8 +256,22 @@ footer a:hover {
     }
     /* -------------- */
 
+    .main {
+        text-align: center;
+    }
+
+    .content {
+        max-width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .content p {
         max-width: none;
+    }
+
+    .img_container {
+        max-width: 50%;
     }
 }
 
@@ -297,6 +312,21 @@ footer a:hover {
     /* Content */
     .main h3 {
         font-size: 1.5em;
+    }
+
+    .main {
+        text-align: left;
+        padding-left: 1em;
+    }
+
+    .content {
+        max-width: 92%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .img_container {
+        max-width: 95%;
     }
     /* -------------- */
 }   
