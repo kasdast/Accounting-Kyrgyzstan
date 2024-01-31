@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif; 
+    background-color: #FAE2C3;
 }
 
 section {
@@ -26,7 +27,7 @@ a, a:hover {
 }
 
 nav {
-    background: #404040;
+    background: #212120;
     padding: 1.5em 2.5em;
     display: flex;
     align-items: center;
@@ -37,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ef4b3f;
+    color: orange;
 }
 
 .logo {
@@ -131,7 +132,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 1em 2em;
-    background: #404040;
+    background: #212120;
     margin-top: auto;
     width: 100%;
     font-size: 1.2em;
@@ -171,7 +172,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #222;
+    color: orange;
 }
 /* -------------- */
 
