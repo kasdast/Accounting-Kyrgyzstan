@@ -21,7 +21,7 @@ a, a:hover {
 
 nav {
     background: #212120;
-    padding: 1.5em 2.5em;
+    padding: 1em 2.5em;
     display: flex;
     align-items: center;
 }
@@ -72,8 +72,8 @@ nav a:hover {
 /*---------------*/
 
 section {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
     display: flex;
     flex: 1; 
 }
@@ -242,6 +242,8 @@ footer a:hover {
 @media all and (max-width: 1200px) {
     section {
         flex-direction: column;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
     }
 
     /* Navigation Bar */
