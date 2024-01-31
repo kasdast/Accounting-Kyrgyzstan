@@ -115,6 +115,7 @@ nav a:hover {
     text-align: left;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .wrapper h1 {
@@ -198,6 +199,7 @@ svg {
     text-align: left;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .logo_container {
@@ -215,8 +217,6 @@ svg {
 
 .wrapper_info {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 4em;
 }
 
@@ -230,6 +230,8 @@ svg {
     padding-top: 2em ;
     flex: 3 3 150px;
     text-align: left;
+    justify-content: center;
+
 }
 
 .wrapper_info p {
