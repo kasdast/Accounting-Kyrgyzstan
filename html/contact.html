@@ -50,40 +50,52 @@
     <!------------------------------------------------------------------------------>
 
     
-    <section> 
+    <section>
+        <div class = "title">
+            <div class="img_container">
+                <img src="/assets/img/Contact us-pana.jpg" alt="Picture">
+            </div>
 
-        <div id="info">
-            <div>Напишите нам</div>
-            <p>Свяжемся с вами в кратчайшие сроки!</p>
-            <p class="quote"> <i>" Бухгалтерия — триумф математики над разумом." </i></p>
+            <!--
+            <div class = "contact_info">
+                <h1>Our Contacts</h1>
+                <ul>
+                    <li>example@gmail.com</li>
+                    <li>+999 111 222 333</li>
+                </ul>
+            </div>
+            -->
+
         </div>
+        <div class="content">           
+            <form action="" class = "contact">
+                <div class="contact-title">
+                    <h2>Cвяжитесь с нами</h2>
+                    <hr>
+                </div>
 
-        <div id="contact.container">
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact">
-
-            <input type="hidden" name="access_key" value="721c1709-26de-42da-8e99-16c1a7123b37">
-            <input type="text" name="Имя" placeholder="Ваше имя" class="input" required>
-            <input type="email" name="Email" placeholder="Email" class="input" required>
-            <textarea name="Сообщение от клиента" placeholder="Сообщение" class="input"required></textarea>
-            <button type="submit "> Отправить <alt=""> </button>
-
-        </form>
-
+                <input type="text" name = "name" placeholder="Ваше имя" class = "contact-inputs" required>
+                <input type="email" name = "email" placeholder="Ваш e-mail" class = "contact-inputs" required>
+                <textarea name="message" placeholder="Ваше сообщение" class="contact-inputs" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
         </div>
     </section>
-
     
-
-
     <footer>
-        <span><ion-icon name="call-outline"></ion-icon> +996 (111) 222 333</span>
+        <div class = "footer_contact">
+            <span>
+                <ion-icon name="call-outline"></ion-icon><p><em>+996 503 600 616</em></p>
+            </span>
+            <span>
+                <ion-icon name="mail-outline"></ion-icon><p><em>ccntngkyrgyzstan@gmail.com</em></p>
+            </span>
+        </div>
         <ul>
             <li><a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
             <li><a href="#" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
         </ul>
     </footer>
 
-
-    
 </body>
 </html>
