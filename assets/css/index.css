@@ -20,6 +20,8 @@ section {
     display: flex;
     flex: 1;
     margin-bottom: 8rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper {
