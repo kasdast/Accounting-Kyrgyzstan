@@ -176,14 +176,23 @@ footer a:hover {
     }
 
     .img_container {
-        margin: 0 auto;
         max-width: 80%;
         overflow: hidden;
+        top: 100px
     }
 
     .title {
+        padding: 2em 0.75em;
+        margin: 5px;
+        width: 100%;
         text-align: left;
         font-size: 0.6em;
+    }
+
+    .content {
+        padding: 0;
+        margin: 5px;
+        width: 100%;
     }
 
     /* Navigation Bar */

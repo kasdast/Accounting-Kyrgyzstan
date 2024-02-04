@@ -95,9 +95,8 @@ section {
     flex-direction: column;
     flex: 1;
     margin-left: 5px;
-    margin-right: 5px;  
-    /* border: solid 1px black; */
-    left: 2000px
+    margin-right: 5px; 
+    
      
     
 }
@@ -176,7 +175,34 @@ padding-bottom: 10px;
     border: solid 1px black;
     border-radius: 7px;
     margin-bottom: 130px;
-}}
+}
+
+#num1 {
+    background-image: url(https://www.stekaudit.ru/upload/resize_cache/iblock/5d9/600_480_1/PF1rBDlee9c.jpg);
+    background-size: cover;
+    background-position: center;
+    max-height: 200px;
+}
+
+#num2 {
+    background-image: url(https://static.tildacdn.com/tild3031-6131-4536-a264-666531626430/J6gkj7CyZzg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70%;
+
+}
+
+#num3 {
+    background-image: url(https://deaction.com/wp-content/uploads/2020/03/chto-takoe-audit-sajta-02-1100x445.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 70%;
+
+}
+
+
+
+}
 
 @media all and (max-width: 1200px) {.content2 {
     margin: 5px;
@@ -227,7 +253,8 @@ padding-bottom: 10px;
     }
 }
 
-@media all and (max-width: 425px) {.content1, .content2, .content3 {
+@media all and (max-width: 425px) {
+    .content1, .content2, .content3 {
     margin: 5px;
     flex: 3 3 150px;
     width: 100%;
@@ -237,9 +264,48 @@ padding-bottom: 10px;
     font-weight: lighter;
     border: solid 1px black;
     border-radius: 7px;
-    min-height: 200px;   
+    min-height: 290px;   
     margin-bottom: 100px; 
-}}
+}
+#num1 {
+    background-image: url(https://www.stekaudit.ru/upload/resize_cache/iblock/5d9/600_480_1/PF1rBDlee9c.jpg);
+    background-size: cover;
+    background-position: center;
+    max-height: 10vh;
+}
+
+#num2 {
+    background-image: url(https://static.tildacdn.com/tild3031-6131-4536-a264-666531626430/J6gkj7CyZzg.jpg);
+    background-size: cover;
+    background-position: center;
+    max-height: 10vh;
+    margin-bottom: 100px;
+
+}
+
+#num3 {
+    background-image: url(https://deaction.com/wp-content/uploads/2020/03/chto-takoe-audit-sajta-02-1100x445.jpg);
+    background-size: cover;
+    background-position: center;
+    max-height: 10vh;
+
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+    padding-right: 20px;
+    margin-top: 30px;
+    justify-content: space-between
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px; 
+
+}
 
 
 #buttonWrapper a {
@@ -255,7 +321,7 @@ padding-bottom: 10px;
 #buttonWrapper a:hover {
     box-shadow: 3px 3px 5px black
 }
-
+}
 
 /* Footer */
 footer {
