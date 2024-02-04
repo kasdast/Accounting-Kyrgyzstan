@@ -114,7 +114,6 @@ nav a:hover {
 .img_container {
     margin: 0 auto;
     max-width: 60%; 
-    background-color: aquamarine;
     overflow: hidden;
     border-radius: 15px;
 }

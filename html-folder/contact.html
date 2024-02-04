@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>БУХГАЛТЕРСКИЕ УСЛУГИ | БИШКЕК | Accounting Kyrgyzstan</title>
     <link rel="stylesheet" type = "text/css" href="/assets/css/contact.css">
+    <link rel="stylesheet" type = "text/css" href="/assets/css/animate.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
@@ -20,7 +21,7 @@
             </div>
             <ul class="menu">
                 <li><a href="/html-folder/about.html">О нас</a></li>
-                <li><a href="/html-folder/services.html">Услуfffги</a></li>
+                <li><a href="/html-folder/services.html">Услуги</a></li>
                 <li><a href="/html-folder/contact.html">Контакты</a></li>
             </ul>
         </nav>
@@ -50,7 +51,7 @@
     <!------------------------------------------------------------------------------>
 
 
-    <section>
+    <section >
         <div class = "title">
             <div class="img_container">
                 <img src="/assets/img/Contact us-pana.jpg" alt="Picture">
@@ -67,17 +68,17 @@
             -->
 
         </div>
-        <div class="content">           
-            <form action="" class = "contact">
+        <div  class="content" >           
+            <form  action="" class = "contact">
                 <div class="contact-title">
-                    <h2>Cвяжитесь с нами</h2>
+                    <h2 class="wow fadeInUp">Cвяжитесь с нами</h2>
                     <hr>
                 </div>
 
                 <input type="text" name = "name" placeholder="Ваше имя" class = "contact-inputs" required>
                 <input type="email" name = "email" placeholder="Ваш e-mail" class = "contact-inputs" required>
                 <textarea name="message" placeholder="Ваше сообщение" class="contact-inputs" required></textarea>
-                <button type="submit">Отправить</button>
+                <button class="wow fadeInUp" type="submit">Отправить</button>
             </form>
         </div>
     </section>
@@ -96,6 +97,11 @@
             <li><a href="#" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
         </ul>
     </footer>
+
+    <script src="/js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 
 </body>
 </html>

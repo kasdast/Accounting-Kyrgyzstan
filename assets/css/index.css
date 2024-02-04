@@ -89,6 +89,8 @@ nav a:hover {
 /*---------------*/
 
 /* Banner */
+
+
 .banner 
 {
     padding: 3em 0;
@@ -115,7 +117,12 @@ nav a:hover {
     text-align: left;
     display: flex;
     align-items: center;
+    
 }
+@media all and (min-width: 1200px) {
+    .title h1 {
+        margin-left: 180px
+    }}
 
 .wrapper h1 {
     font-size: 3em;
@@ -197,6 +204,10 @@ svg {
     text-align: left;
     display: flex;
     align-items: center;
+}
+
+@media all and (min-width: 1200px) {
+    .title2 {margin-left: 90px}
 }
 
 .logo_container {
